@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Micatech stack — certifications, tools and platforms across networking, cybersecurity, IT support and web." />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFBEB" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#070709" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="canonical" href="https://micatech.vercel.app/certifications.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Micatech" />
+  <meta property="og:title" content="Stack & Credentials — Micatech | Networking, Security, IT & Web" />
+  <meta property="og:description" content="Micatech stack — certifications, tools and platforms across networking, cybersecurity, IT support and web." />
+  <meta property="og:url" content="https://micatech.vercel.app/certifications.html" />
+  <meta property="og:image" content="https://micatech.vercel.app/server.jpg" />
+  <meta property="og:image:alt" content="Micatech — IT Solutions, SOC Defense, Networking, IT Support & Web" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Stack — Micatech</title>
+  <script>(function(){try{var k='micatech-theme',s=localStorage.getItem(k)||localStorage.getItem('chael-theme');var m=window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';var t=s||m||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    .page-hero { padding: 128px 24px 60px; border-bottom: 1px solid var(--border); }
+    .page-hero-inner { max-width: var(--max-w); margin: 0 auto; }
+    .page-title { font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 800; color: var(--white); letter-spacing: -0.8px; margin-bottom: 10px; }
+    .page-subtitle { font-size: 0.97rem; color: var(--text-muted); max-width:720px; }
+    .cert-section { padding: 56px 0; }
+    .cert-section + .cert-section { border-top: 1px solid var(--border); }
+    .cert-block-title { font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 22px; display: flex; align-items: center; gap: 12px; letter-spacing:-0.2px; }
+    .cert-block-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">MICATECH<span class="accent">.</span></a>
+      <div class="nav-right">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="certifications.html">Stack</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-inner" data-reveal>
+      <h1 class="page-title">Stack & Credentials</h1>
+      <p class="page-subtitle">What Micatech runs on — certifications in progress, plus the tools we use daily across networking, SOC/cybersec, IT support and web builds for small brands.</p>
+    </div>
+  </div>
+
+  <div style="max-width: var(--max-w); margin: 0 auto; padding: 0 24px;">
+
+    <section class="cert-section">
+      <h2 class="cert-block-title" data-reveal>Core Stack — What we run daily</h2>
+      <div class="tool-category" data-reveal>
+        <h3 class="tool-category-name">Cybersecurity & SOC</h3>
+        <h4 class="sr-only">SOC stack</h4>
+        <div class="tools-grid">
+          <div class="tool-item" data-reveal>Wazuh</div>
+          <div class="tool-item" data-reveal data-reveal-delay="1">Splunk</div>
+          <div class="tool-item" data-reveal data-reveal-delay="2">Suricata</div>
+          <div class="tool-item" data-reveal data-reveal-delay="3">YARA</div>
+          <div class="tool-item" data-reveal>Kibana</div>
+          <div class="tool-item" data-reveal>Elasticsearch</div>
+        </div>
+        <h5 style="font-size:0.65rem;color:var(--text-faint);font-family:var(--mono);margin-top:8px;letter-spacing:0.04em;">MONITOR • HUNT • RESPOND</h5>
+      </div>
+      <div class="tool-category" data-reveal>
+        <h3 class="tool-category-name">Networking & Infrastructure</h3>
+        <h4 class="sr-only">Network toolkit</h4>
+        <div class="tools-grid">
+          <div class="tool-item">Cisco Packet Tracer</div>
+          <div class="tool-item">pfSense</div>
+          <div class="tool-item">Wireshark</div>
+          <div class="tool-item">Nmap</div>
+          <div class="tool-item">tcpdump</div>
+          <div class="tool-item">Zeek</div>
+          <div class="tool-item">VLAN / VPN</div>
+        </div>
+        <h5 style="font-size:0.65rem;color:var(--text-faint);font-family:var(--mono);margin-top:8px;letter-spacing:0.04em;">LAN • WLAN • ROUTING • FIREWALL</h5>
+      </div>
+      <div class="tool-category" data-reveal>
+        <h3 class="tool-category-name">IT Support & Systems</h3>
+        <h4 class="sr-only">Support toolkit</h4>
+        <div class="tools-grid">
+          <div class="tool-item">Windows Server</div>
+          <div class="tool-item">Linux (Ubuntu/Kali/Debian)</div>
+          <div class="tool-item">Active Directory</div>
+          <div class="tool-item">VMware</div>
+          <div class="tool-item">VirtualBox</div>
+          <div class="tool-item">Backups & Imaging</div>
+        </div>
+        <h5 style="font-size:0.65rem;color:var(--text-faint);font-family:var(--mono);margin-top:8px;letter-spacing:0.04em;">SETUP • HARDEN • BACKUP</h5>
+      </div>
+      <div class="tool-category" data-reveal>
+        <h3 class="tool-category-name">Web for Small Brands</h3>
+        <h4 class="sr-only">Web toolkit</h4>
+        <div class="tools-grid">
+          <div class="tool-item">HTML/CSS/JS</div>
+          <div class="tool-item">Responsive Design</div>
+          <div class="tool-item">SEO Basics</div>
+          <div class="tool-item">Performance</div>
+          <div class="tool-item">Forms & Maps</div>
+        </div>
+        <h5 style="font-size:0.65rem;color:var(--text-faint);font-family:var(--mono);margin-top:8px;letter-spacing:0.04em;">FAST • MOBILE • CONVERTING</h5>
+      </div>
+    </section>
+
+    <section class="cert-section">
+      <h2 class="cert-block-title" data-reveal>Development & Automation</h2>
+      <div class="tool-category" data-reveal>
+        <h3 class="tool-category-name">Languages</h3>
+        <h4 class="sr-only">Languages</h4>
+        <div class="tools-grid">
+          <div class="tool-item">Python</div>
+          <div class="tool-item">Bash</div>
+          <div class="tool-item">PowerShell</div>
+        </div>
+        <h5 style="font-size:0.65rem;color:var(--text-faint);font-family:var(--mono);margin-top:8px;letter-spacing:0.04em;">CODE • SCRIPT • AUTOMATE</h5>
+      </div>
+      <div class="tool-category" data-reveal>
+        <h3 class="tool-category-name">Automation & Tooling</h3>
+        <h4 class="sr-only">Automation</h4>
+        <div class="tools-grid">
+          <div class="tool-item">Flask</div>
+          <div class="tool-item">Scapy</div>
+          <div class="tool-item">Ansible</div>
+          <div class="tool-item">Git / GitHub</div>
+          <div class="tool-item">Docker</div>
+        </div>
+        <h5 style="font-size:0.65rem;color:var(--text-faint);font-family:var(--mono);margin-top:8px;letter-spacing:0.04em;">PIPELINES • PLAYBOOKS • REPO</h5>
+      </div>
+    </section>
+
+    <section class="cert-section" style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 32px 24px; margin-top: 12px;">
+      <div style="max-width: var(--max-w); margin: 0 auto;">
+        <div style="display:inline-flex;align-items:center;gap:8px;font-size:0.7rem;font-family:var(--mono);letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-dim);border:1px solid var(--accent-border);padding:5px 10px;border-radius:999px;margin-bottom:14px;font-weight:600;" data-reveal>Selected References • Shipped</div>
+        <h2 class="section-title" data-reveal style="margin-bottom:18px;">Same craft, two surfaces</h2>
+        <p style="color:var(--text-muted);max-width:680px;margin:0 0 28px;font-size:0.97rem;line-height:1.7;" data-reveal>Well positioned to show what Micatech ships — a live commerce marketplace and a reference SOC. Both share the same discipline: clean build, documented, supported.</p>
+        <div class="work-grid">
+          <article class="work-card featured" data-reveal>
+            <div class="work-body">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+                <span style="font-size:0.68rem;font-family:var(--mono);letter-spacing:0.06em;text-transform:uppercase;color:#16a34a;background:rgba(22,163,74,0.10);border:1px solid rgba(22,163,74,0.22);padding:3px 8px;border-radius:999px;font-weight:700;">Live</span>
+                <span style="font-size:0.68rem;font-family:var(--mono);color:var(--text-faint);">hiresphere.com.ng</span>
+                <span style="margin-left:auto;font-size:0.68rem;color:var(--accent);font-family:var(--mono);border:1px solid var(--accent-border);background:var(--accent-dim);padding:3px 8px;border-radius:6px;font-weight:600;">Marketplace</span>
+              </div>
+              <h3>hiresphere.com.ng — Services Marketplace</h3>
+              <p><strong>Live local marketplace</strong> where Nigerians buy and sell everyday services — tailoring to tutoring, cleaning to repairs. Sellers list in minutes, buyers find by category and location and contact directly. Mobile-fast, SEO tuned, up and running.</p>
+              <h4 style="font-size:0.72rem;color:var(--accent);font-family:var(--mono);margin-top:8px;">MARKETPLACE • MOBILE-FIRST • SEO • LIVE</h4>
+              <div class="work-meta" style="margin-top:10px;"><span class="tag sm">Marketplace</span><span class="tag sm">Buyer/Seller</span><span class="tag sm">Live</span></div>
+              <h5 style="font-size:0.65rem;color:var(--text-faint);font-family:var(--mono);margin-top:10px;">HIRESHPERE.COM.NG • VISIT LIVE • PRODUCED BY MICATECH</h5>
+            </div>
+          </article>
+          <article class="work-card" data-reveal data-reveal-delay="1">
+            <div class="work-body">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+                <span class="project-badge">Reference</span>
+                <span style="font-size:0.68rem;font-family:var(--mono);color:var(--text-faint);margin-left:auto;">chael.soc — lab</span>
+              </div>
+              <h3>CHAEL — Cyber Defense Lab</h3>
+              <p>Reference SOC: Wazuh, Splunk, ELK pipelines, Suricata and YARA, SOAR playbooks. Our lab where detections are tuned before customer rollouts.</p>
+              <h4 style="font-size:0.72rem;color:var(--accent);font-family:var(--mono);margin-top:8px;">SOC • SIEM • AUTOMATION • LAB</h4>
+              <h5 style="font-size:0.65rem;color:var(--text-faint);font-family:var(--mono);margin-top:10px;">WAZUH • SPLUNK • PYTHON • REFERENCE</h5>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer id="footer" style="margin-top: 40px;">
+    <div class="footer-inner">
+      <h5 class="footer-name" style="font-size:1rem;font-weight:800;color:var(--white);letter-spacing:-0.4px;">MICATECH<span class="accent">.</span></h5>
+      <p class="footer-copy">&copy; 2026 Micatech. Built by Micato. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Micatech — IT Solutions · Cybersecurity SOC · Networking · Web",
+  "short_name": "Micatech",
+  "description": "Micatech keeps small and growing businesses online, secure and supported — SOC defense, networking, IT support and web development.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070709",
+  "theme_color": "#070709",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

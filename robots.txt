@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://micatech.vercel.app/sitemap.xml
