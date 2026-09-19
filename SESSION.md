@@ -1,4 +1,4 @@
-# MICATECH — Session Snapshot — 2026-09-18
+# MICATECH — Session Snapshot — 2026-09-19
 > snapshot created to resume later: say `continue Micatech portfolio` or `load SESSION.md`
 
 ## 1. Project identity
@@ -7,7 +7,8 @@
 - **Positioning:** IT Solutions shop: Cybersecurity SOC, Networking & Infrastructure, IT Support, Web Development for small brands. Enterprise discipline at SME price.
 - **Workspace:** `C:\Users\Hermes\Desktop\portfolio\` — vanilla HTML/CSS/JS, Python http.server, OpenCode + muse-spark-1.2
 - **GitHub:** repo `Micatob/portfolio` (public) — `https://github.com/Micatob/portfolio` — branch `main`, created & pushed 2026-09-18. Local git user set via `-c` flags; stored token belongs to `Micatob` even though GCM shows `Hermesfury`.
-- **Hosting:** deploying to **Vercel** (free). Name the project `micatech` → `https://micatech.vercel.app`. Custom domain later: search-replace `micatech.vercel.app` in `sitemap.xml`, `robots.txt`, and canonical/og in all 5 HTML heads (see `README.md:12`).
+- **Hosting:** **LIVE on Vercel** — project `micatech` → `https://micatech.vercel.app` (renamed 2026-09-19, was `portfolio-self-phi-rwlzuy801j`). GitHub repo name ≠ Vercel domain; domain comes from Vercel Project Name. Custom domain later: search-replace `micatech.vercel.app` in `sitemap.xml`, `robots.txt`, and canonical/og in all 5 HTML heads (see `README.md:12`).
+- **2026-09-19 fix — Vercel 404:** stray `public/` (Vercel template `favicon.svg` 9.5kB + `icons.svg`) was shadowing root — Vercel with `No framework` serves `public/` if it exists, so deploy was `All (2)` with no `index.html` → `404 NOT_FOUND` on `/`, `/index.html`, `/sitemap.xml`. Fixed by deleting `public/` + adding `vercel.json` (`cleanUrls`, no build). Commits `6e013e7` (vercel.json), `ab4d26d` (remove public/). Root `index.html` + gold `favicon.svg` (214b) now served. Dashboard must stay: Framework `Other`, Root empty, Build/Output empty.
 - **Live reference:** hiresphere.com.ng — **local services marketplace** where Nigerians buy & sell everyday services. Second reference: CHAEL — Cyber Defense & SOC Lab (reference build, not client).
 
 ## 2. Design system (current)
@@ -38,8 +39,9 @@
 - `style.css:1247` — gold-black + light cream, project card image styles `.project-card-img`, breatheGlow/floatGreeting/typewriterCursor/imgReveal/shimmerSlide keyframes, section-title hover underline, typing-cursor class
 - `main.js:261` — theme, navbar hide/show + orb parallax, hamburger, active nav, form, reveal, **text scramble effect**, **counter animation**, **typing cursor**
 - **Images in root:** `server.jpg`, `soc-dashboard.webp`, `tech.jpg`, `web.jpeg`
-- `public/favicon.svg`, `public/icons.svg`
-- `sitemap.xml`, `robots.txt`, `manifest.webmanifest`, `favicon.svg` (root), `README.md` — SEO + Vercel deploy switchboard (placeholder domain `micatech.vercel.app`)
+- `vercel.json` — `cleanUrls: true`, static headers (added 2026-09-19 to lock zero-config)
+- `sitemap.xml`, `robots.txt`, `manifest.webmanifest`, `favicon.svg` (root, gold 214b), `README.md` — SEO + Vercel deploy switchboard (domain `micatech.vercel.app`)
+- NOTE: `public/` deleted 2026-09-19 — was Vercel template leftovers shadowing root → 404. Do NOT re-add `public/` unless site is moved inside it.
 
 ## 5. Recent changes log
 - 2026-09-09a: Axom-inspired premium + dark/light blend
@@ -52,6 +54,8 @@
 - **2026-09-17c:** Added `tech.jpg` to IT Support card, `web.jpeg` to Web Dev card — all 4 pillars now have images
 - **2026-09-18a:** SEO + deploy layer — `sitemap.xml`, `robots.txt`, `favicon.svg`, `manifest.webmanifest`, per-page canonical/OG/Twitter/theme-color, JSON-LD on index; renamed `soc dashboard.webp` → `soc-dashboard.webp`; full go-live steps in `README.md`
 - **2026-09-18b:** `git init` (branch `main`), created public repo `Micatob/portfolio` via GitHub API (stored token), pushed all 21 files — commit `15e6a23`. Next step: import repo into Vercel.
+- **2026-09-19a:** Vercel import → 404 hell — project first lived at `portfolio-self-phi-rwlzuy801j.vercel.app`, deploy `All (2)` only. Diagnosed stray `public/` shadowing root.
+- **2026-09-19b:** Added `vercel.json` — commit `6e013e7`, pushed. Removed `public/` — commit `ab4d26d`, pushed. Site went live. Renamed Vercel project → `micatech` → `https://micatech.vercel.app`.
 
 ## 6. How to resume
 1. Open `C:\Users\Hermes\Desktop\portfolio\` in OpenCode
@@ -62,9 +66,9 @@
 6. To edit content: `index.html:87` pillars with images, `index.html:175` work
 
 ## 7. Open todos / ideas if continuing
-- [ ] **Deploy to Vercel** — vercel.com sign in with GitHub → Add New → Project → import `Micatob/portfolio` → name it `micatech` → Deploy (static, ~1 min)
-- [ ] Verify live URL: `/`, `/sitemap.xml`, `/robots.txt`, gold favicon in tab
-- [ ] Google Search Console — add vercel.app URL prefix, submit `sitemap.xml`, request indexing
+- [x] **Deploy to Vercel** — DONE 2026-09-19, live at `https://micatech.vercel.app`
+- [x] Verify live URL: `/`, `/sitemap.xml`, `/robots.txt`, gold favicon in tab — DONE (after public/ fix)
+- [ ] Google Search Console — add `https://micatech.vercel.app` URL prefix, submit `sitemap.xml`, request indexing (SEO files are ready, Google listing is NOT automatic)
 - [ ] Optimize images — `server.jpg` and `tech.jpg` / `web.jpeg` may benefit from compression or WebP conversion
 - [ ] Add `loading="lazy"` already present on all images — verify performance
 - [ ] Consider adding `srcset` for responsive image sizes on mobile
@@ -81,4 +85,4 @@
 - Greeting pill floats via `floatGreeting 3.5s`
 
 ---
-*Saved by OpenCode — 2026-09-18 — say `continue` to pick up. Deploying to Vercel is the next step.*
+*Saved by OpenCode — 2026-09-19 — live at https://micatech.vercel.app. Say `continue` to pick up. Next: Search Console submit.*
