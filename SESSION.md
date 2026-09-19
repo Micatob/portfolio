@@ -1,4 +1,4 @@
-# MICATECH — Session Snapshot — 2026-09-17
+# MICATECH — Session Snapshot — 2026-09-18
 > snapshot created to resume later: say `continue Micatech portfolio` or `load SESSION.md`
 
 ## 1. Project identity
@@ -6,6 +6,8 @@
 - **Owner:** Michael Eromosele Ebibhazebhilo — **Micato** — CEO — Network • Cybersecurity Analyst • IT Support Specialist • 2 Years Experience
 - **Positioning:** IT Solutions shop: Cybersecurity SOC, Networking & Infrastructure, IT Support, Web Development for small brands. Enterprise discipline at SME price.
 - **Workspace:** `C:\Users\Hermes\Desktop\portfolio\` — vanilla HTML/CSS/JS, Python http.server, OpenCode + muse-spark-1.2
+- **GitHub:** repo `Micatob/portfolio` (public) — `https://github.com/Micatob/portfolio` — branch `main`, created & pushed 2026-09-18. Local git user set via `-c` flags; stored token belongs to `Micatob` even though GCM shows `Hermesfury`.
+- **Hosting:** deploying to **Vercel** (free). Name the project `micatech` → `https://micatech.vercel.app`. Custom domain later: search-replace `micatech.vercel.app` in `sitemap.xml`, `robots.txt`, and canonical/og in all 5 HTML heads (see `README.md:12`).
 - **Live reference:** hiresphere.com.ng — **local services marketplace** where Nigerians buy & sell everyday services. Second reference: CHAEL — Cyber Defense & SOC Lab (reference build, not client).
 
 ## 2. Design system (current)
@@ -49,20 +51,25 @@
 - **2026-09-17b:** Text animation pass — text scramble on hero headline, counter animation on stats (`data-count`/`data-suffix`), breathing glow on gradient text, floating greeting pill, typing cursor on hero title, section title underline hover extend
 - **2026-09-17c:** Added `tech.jpg` to IT Support card, `web.jpeg` to Web Dev card — all 4 pillars now have images
 - **2026-09-18a:** SEO + deploy layer — `sitemap.xml`, `robots.txt`, `favicon.svg`, `manifest.webmanifest`, per-page canonical/OG/Twitter/theme-color, JSON-LD on index; renamed `soc dashboard.webp` → `soc-dashboard.webp`; full go-live steps in `README.md`
+- **2026-09-18b:** `git init` (branch `main`), created public repo `Micatob/portfolio` via GitHub API (stored token), pushed all 21 files — commit `15e6a23`. Next step: import repo into Vercel.
 
 ## 6. How to resume
 1. Open `C:\Users\Hermes\Desktop\portfolio\` in OpenCode
 2. Prompt: `continue Micatech portfolio` or `load SESSION.md`
 3. Dev server: `python -m http.server 3000` — all 5 pages should 200
-4. To edit styling: `style.css` image styles `.project-card-img`, keyframes `145`, section title `219`
-5. To edit content: `index.html:87` pillars with images, `index.html:175` work
+4. Push updates: `git add -A; git commit -m "msg"; git push` — Vercel auto-redeploys
+5. To edit styling: `style.css` image styles `.project-card-img`, keyframes `145`, section title `219`
+6. To edit content: `index.html:87` pillars with images, `index.html:175` work
 
 ## 7. Open todos / ideas if continuing
+- [ ] **Deploy to Vercel** — vercel.com sign in with GitHub → Add New → Project → import `Micatob/portfolio` → name it `micatech` → Deploy (static, ~1 min)
+- [ ] Verify live URL: `/`, `/sitemap.xml`, `/robots.txt`, gold favicon in tab
+- [ ] Google Search Console — add vercel.app URL prefix, submit `sitemap.xml`, request indexing
 - [ ] Optimize images — `server.jpg` and `tech.jpg` / `web.jpeg` may benefit from compression or WebP conversion
 - [ ] Add `loading="lazy"` already present on all images — verify performance
 - [ ] Consider adding `srcset` for responsive image sizes on mobile
-- [ ] Add `sitemap.xml` or `robots.txt` for hiresphere SEO mention
 - [ ] Check light theme image contrast — images may need brightness adjustment in light mode
+- [ ] When domain bought: add to Vercel + search-replace `micatech.vercel.app` (README checklist)
 
 ## 8. Verification last run
 - All 4 pillar cards have `<img>` tags with correct sources
@@ -74,4 +81,4 @@
 - Greeting pill floats via `floatGreeting 3.5s`
 
 ---
-*Saved by OpenCode — 2026-09-17 — say `continue` to pick up.*
+*Saved by OpenCode — 2026-09-18 — say `continue` to pick up. Deploying to Vercel is the next step.*
