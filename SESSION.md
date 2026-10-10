@@ -1,4 +1,4 @@
-# MICATECH — Session Snapshot — 2026-09-19
+# MICATECH — Session Snapshot — 2026-10-09
 > snapshot created to resume later: say `continue Micatech portfolio` or `load SESSION.md`
 
 ## 1. Project identity
@@ -68,7 +68,11 @@
 ## 7. Open todos / ideas if continuing
 - [x] **Deploy to Vercel** — DONE 2026-09-19, live at `https://micatech.vercel.app`
 - [x] Verify live URL: `/`, `/sitemap.xml`, `/robots.txt`, gold favicon in tab — DONE (after public/ fix)
-- [ ] Google Search Console — add `https://micatech.vercel.app` URL prefix, submit `sitemap.xml`, request indexing (SEO files are ready, Google listing is NOT automatic)
+- [x] Google Search Console — property added, sitemap submitted, homepage ranking #3 for `micatech` as of 2026-10-08
+- [ ] **GSC indexing 2026-10-09 — IN PROGRESS:** 3/6 indexed, 3x `Discovered - currently not indexed` (`services.html`, `contact.html`, `certifications.html`, Last crawled N/A). User clicked Validate Fix 10/9/26 — status Validation Started. Request Indexing hit daily limit on services.html — resume 1/day: services → certifications → contact.
+- [ ] NOTE 2026-10-09: local `robots.txt` was corrupted to Fernet-like `gAAAAAB...` string — RESTORED to `User-agent: * / Allow: / / Sitemap...` to match live. Do NOT deploy until `git diff -- robots.txt` clean. `vercel.json cleanUrls:true` creates duplicate `/services` vs `/services.html` — harmless via canonical, leave alone until validation passes.
+- [ ] Verify next: `site:micatech.vercel.app` should show 2 + omitted = 3 indexed (index + about + 1 more). Dance fluctuation normal 2-4 weeks.
+- [ ] **LOGO 2026-10-09 — WIRED TOMORROW (user chose Nav + SEO):** file `Micatech-logo.png` (641KB gold MT on black, untracked) in root. Plan: (1) nav on all 5 pages `<a class=nav-logo><img src=Micatech-logo.png alt=Micatech height=36>` + CSS `.nav-logo img{height:36px;width:auto;border-radius:8px}` + keep sr text, (2) SEO: `og:image` → `Micatech-logo.png` on all pages, JSON-LD `logo` → `Micatech-logo.png`, manifest add PNG icon, (3) KEEP `favicon.svg` as M-mark (restored 10/09 from live — was corrupted `gAAAAAB...`). Rename to lowercase `micatech-logo.png` on implement to avoid case 404. Deploy once THEN do 1x Request Indexing/day so Google crawls logo version once.
 - [ ] Optimize images — `server.jpg` and `tech.jpg` / `web.jpeg` may benefit from compression or WebP conversion
 - [ ] Add `loading="lazy"` already present on all images — verify performance
 - [ ] Consider adding `srcset` for responsive image sizes on mobile
@@ -85,4 +89,4 @@
 - Greeting pill floats via `floatGreeting 3.5s`
 
 ---
-*Saved by OpenCode — 2026-09-19 — live at https://micatech.vercel.app. Say `continue` to pick up. Next: Search Console submit.*
+*Saved by OpenCode — 2026-10-10 — logo Nav+SEO WIRED locally, NOT pushed yet. Single push pending user confirm: includes 5x nav img + CSS + og:image→logo + JSON-LD logo + manifest PNG + micatech-logo.png (lowercase). Images server.jpg/tech.jpg/web.jpeg/soc-dashboard.webp RESTORED from git (were Fernet-encrypted gAAAAAB... locally — same bug that hit robots.txt/favicon.svg). robots.txt+favicon.svg already clean. After push: wait 10-15min verify live, then 1x Request Indexing/day (quota resets ~24h). Next: push confirm → verify live → indexing.*

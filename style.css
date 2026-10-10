@@ -352,6 +352,7 @@ section { padding: var(--section-pad); position: relative; }
   gap: 2px;
 }
 .nav-logo .accent { font-weight: 800; }
+.nav-logo img { height: 36px; width: auto; border-radius: 8px; display: block; }
 
 .nav-right {
   display: flex;
